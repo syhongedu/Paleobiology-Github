@@ -43,6 +43,6 @@
 1. 
 
 [Morphologic Measurements]
-1.
-2.
-3.
+1. No, I can't tell which specimens belong to which species. It's because maximum and minimum shell diameter (which is used to compare shell morphology between PBDB and provided) in PBDB is so wide that it is almost impossible to figure out. 
+2. A. Brayard, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
+3. Speciemen 1,3,4,7,8,9,10,12,13,15,17,20,21
