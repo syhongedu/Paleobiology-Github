@@ -41,14 +41,22 @@
 
 [Question 6]
 1.  
-> URL <- "https://www.paleobiodb.org/data1.2/occs/list.csv?"
-> URL
-[1] "https://www.paleobiodb.org/data1.2/occs/list.csv?"
+ Example <- function(Taxon,Interval){
++ URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",
++ Taxon,
++ "&interval=",
++ sep="")
++ 
++ Readit <- read.csv(URL)
++ 
++ return(Readit)
++ }
 > 
-> Taxon = "base_name=Tyrannosaurus"
-> Interval = "interval=Cretaceous"
-> paste(URL,Taxon,sep="&",Interval)
-[1] "https://www.paleobiodb.org/data1.2/occs/list.csv?&base_name=Tyrannosaurus&interval=Cretaceous"
+> Abradata <- Example(Taxon="Abra",Interval="Pleistocene
+
++ > Abradata <- Example(Taxon="Abra",Interval="Pleistocene")
+> Abradata
+
 
 [Morphologic Measurements]
 1. No, I can't tell which specimens belong to which species. It's because maximum and minimum shell diameter (which is used to compare shell morphology between PBDB and provided) in PBDB is so wide that it is almost impossible to figure out. 
