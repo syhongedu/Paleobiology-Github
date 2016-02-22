@@ -1,68 +1,100 @@
-[Exercise Questions 1]
-1. 704 collections
-2. 24429
+## Exercise Questions 1
 
-1. This means this first taxon is reported by Conrad at 1830 paper and he named this taxon.
-2. Strophomenata - Strophomenida - Strophomenidae - Strophomena - planumbona 
-3. Union County
-4. Richmondian, Late Orodivician
-5. Liberty Formation
+18.8/20
 
-[Exercise Questions 2]
-1. Different colors signify different time periods
-2. United States (Alabama), Southern United Kingdom (England), France <- in navigator, exact country does not pop up
-3. Cincinnati
-4. Ordovician
+1) 704 collections
 
-1. Parallel
-2. Myalinida
+2) 24429
 
-[Exercise Questions 3]
-1. https://paleobiodb.org/data1.2/occs/list.json?datainfo&rowcount&base_name=Ambonychia&strat=Lexington Limestone
-2. https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Mammalia&interval=Paleocene,Oligocene
-3. https://paleobiodb.org/data1.2/taxa/opinions.csv?datainfo&rowcount&base_name=Testudines&interval=Mesozoic
-4. https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Aves, Marsupialia, Sirenia&cc=US
-5. https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Ficus
+1) This means this first taxon is reported by Conrad at 1830 paper and he named this taxon.
 
-[Exercise Questions 4]
-1. Gastrocoptidae 
-2. Aptian (Early Cretaceous)
-3. Bridgerian (Eocene)
-4. Yes, Tiktaalik has only one occurrence. And its occurrence was located at tropics when it was alive 
-5. Kotodzha Formation and Raiga Formation
+2) Strophomenata - Strophomenida - Strophomenidae - Strophomena - planumbona 
 
-[Exercise Questions 5]
-1. URL <-"https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Pliocene"
-2. 39 12
-3. Collections
-4. Mammut ("Mastodon"), Pliocene
-5. You can extend the age search by using Download data. The new data query URL supposed to be "https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pleistocene" 
-6. "https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pleistocene&show=paleoloc"
+3) Union County
 
-[Question 6]
-<<<<<<< HEAD
-1. Example <- function(Taxon,Interval){
-=======
-1.  
- Example <- function(Taxon,Interval){
->>>>>>> 5d5b2b03fe744790422caac985ff6c0017092bef
-+ URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",
-+ Taxon,
-+ "&interval=",
-+ sep="")
-+ 
-+ Readit <- read.csv(URL)
-+ 
-+ return(Readit)
-+ }
-> 
-> Abradata <- Example(Taxon="Abra",Interval="Pleistocene
+4) Richmondian, Late Orodivician
 
-+ > Abradata <- Example(Taxon="Abra",Interval="Pleistocene")
-> Abradata
+5) Liberty Formation
 
+## Exercise Questions 2
 
-[Morphologic Measurements]
-1. No, I can't tell which specimens belong to which species. It's because maximum and minimum shell diameter (which is used to compare shell morphology between PBDB and provided) in PBDB is so wide that it is almost impossible to figure out. 
-2. A. Brayard, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
-3. Speciemen 3,4,7,8,10,12,13,15,17,20,21
+1) Different colors signify different time periods
+
+2) United States (Alabama), Southern United Kingdom (England), France <- in navigator, exact country does not pop up
+
+3) Cincinnati
+
+4) Ordovician
+
+1) Parallel
+
+2) Myalinida
+
+## Exercise Questions 3
+
+1) https://paleobiodb.org/data1.2/occs/list.json?datainfo&rowcount&base_name=Ambonychia&strat=Lexington Limestone
+
+2) https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Mammalia&interval=Paleocene,Oligocene
+
+3) https://paleobiodb.org/data1.2/taxa/opinions.csv?datainfo&rowcount&base_name=Testudines&interval=Mesozoic
+
+4) https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Aves, Marsupialia, Sirenia&cc=US
+
+5)https://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&base_name=Ficus
+
+> -1 points, You need to specify Gastropoda:Ficus to prevent getting a plant
+
+## Exercise Questions 4
+
+1) Gastrocoptidae 
+
+2) Aptian (Early Cretaceous)
+
+3) Bridgerian (Eocene)
+
+4) Yes, Tiktaalik has only one occurrence. And its occurrence was located at tropics when it was alive 
+
+5) Kotodzha Formation and Raiga Formation
+
+## Exercise Questions 5
+
+1) URL <-"https://paleobiodb.org/data1.2/colls/list.csv?base_name=Mammut&interval=Pliocene"
+
+> You need to use `read.csv( )`
+
+2) 39 12
+
+3) Collections
+
+4) Mammut ("Mastodon"), Pliocene
+
+5) You can extend the age search by using Download data. The new data query URL supposed to be "https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pleistocene" 
+
+6) "https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pleistocene&show=paleoloc"
+
+## Question 6
+
+1) 
+````R
+Example <- function(Taxon,Interval){
+     URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",Taxon,"&interval=",sep="")
+     Readit <- read.csv(URL)
+     return(Readit)
+     }
+````
+     
+ > Close, but you need to have Interval in the code. like this
+ 
+ URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",Taxon,"&interval=",Interval,sep="")
+
+> Abradata <- Example(Taxon="Abra",Interval="Pleistocene")
+
+## Morphologic Measurements
+
+1) No, I can't tell which specimens belong to which species. It's because maximum and minimum shell diameter (which is used to compare shell morphology between PBDB and provided) in PBDB is so wide that it is almost impossible to figure out. 
+
+2) A. Brayard, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
+
+3) Specimen 3,4,7,8,10,12,13,15,17,20,21
+
+> Why? You need to explain your reasoning. -1 points
