@@ -1,0 +1,29 @@
+[Problem Set 1]
+1. Miocene -> 602
+   Early Jurassic -> 169
+   Late Cretaceous -> 375
+   Pennsylvanian -> 133
+   I used apply(PresencePBDB,1,sum)
+2. 29, I used I used apply(PresencePBDB,1,sum) and counted them
+3. Pridoli, Early Devonian, Cisuralian, Late Jurassic, Eocene, Late Cretaceous, Early Cretaceous, Middle Jurassic, Paleocene, Oligocene, Miocene, Early Jurassic, Pleistocene, Middle Jurassic, Late Triassic, Pliocene, Early Triassic. I used which(PresencePBDB[,"Mytilus"]==1)
+4. Holocene, Lopingian, Guadalupian, Mississippian, Late Devonian, Middle Devonian, Compare occurrence in PBDB data and geologic timescale. Since Mytilus' timespan in PBDB data is Pridoli to Pleistocene, you can deduce out that missing epochs between Pridoli and Pleistocene are answer for this question. I also added Holocene because Mytilus still exists now.
+
+[Problem Set 2]
+1.
+2.
+3.
+4.
+
+[Problem Set 3]
+1.
+2.
+3.
+4.
+5.
+
+[Problem Set 4]
+1.
+2.
+3.
+4.
+5.
