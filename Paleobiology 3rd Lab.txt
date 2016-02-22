@@ -40,7 +40,12 @@
 6. "https://paleobiodb.org/data1.2/colls/list.csv?datainfo&rowcount&base_name=Mammut&interval=Miocene,Pleistocene&show=paleoloc"
 
 [Question 6]
+<<<<<<< HEAD
 1. Example <- function(Taxon,Interval){
+=======
+1.  
+ Example <- function(Taxon,Interval){
+>>>>>>> 5d5b2b03fe744790422caac985ff6c0017092bef
 + URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",
 + Taxon,
 + "&interval=",
