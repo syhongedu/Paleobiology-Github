@@ -61,7 +61,7 @@
 + > Abradata <- Example(Taxon="Abra",Interval="Pleistocene")
 > Abradata
 
-
+/
 [Morphologic Measurements]
 1. No, I can't tell which specimens belong to which species. It's because maximum and minimum shell diameter (which is used to compare shell morphology between PBDB and provided) in PBDB is so wide that it is almost impossible to figure out. 
 2. A. Brayard, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
