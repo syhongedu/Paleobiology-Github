@@ -1,0 +1,16 @@
+8th Writing Assignment
+Sungyoon Hong
+
+Determinants of extinction in the fossil record by Shanan E. Peters & Michael Foote (2002)
+
+[Article Summary]
+In this article, Peters and Foote discuss whether the amount of exposed marine sedimentary rocks actually lead to the bias in the extinction record throughout Phanerozoic era. Peters and Foote gathered the number of exposed rock (or number of marine sedimentary formations) and genus data (from Sepkoski's unpublished compendium) and compare two data sets to find out the actual amount of exposed marine rock records are actually affecting the extinction record we see in fossil record. The authors go through 3 different analysis to find out the relationship. First, they find out the relationship between observed extinction rate and the number of formation in the combined dataset. And then they analyzed extinction rate per lineage or stage to geological time to calibrate these two endmembers. To test the statistical significance of these models, the authors generated null model by randomizing combined time series. In the end, they found out that exposed sedimentary rocks do impact on the extinction model and marine biosphere might be more stable than we expected (which likely to rule out sudden extinction causes like bollide impact). They suspect sea level change would cause this type of artifacts since sea level change can affect both preservation level and extinction rate. Moreover, the authors suspect the increased extinction rate showed in records are actually reflecting the pseudo-extinction which is triggered from the lack of sedimentary rock records to actual record last appearance age. 
+
+[Things I liked about this article]
+I liked how the authors trying to tackle into the problem which can be very confusing and frustrating. I personally thought about this issue a lot and it was somewhat frustrating but reliving that actual amount of exposed sedimentary rocks does affect on fossil extinction rate. I bet this is good starting point to the way of finding out more accurate extinction rate over time period. Also, I liked how they used multiple analysis approach to bring out more accurate pattern.
+
+[Things I didn't like about this article]
+One thing I didn't like about this article is that it was very hard article to read. Very statistical that it was hard for me to read without any big statistical background even though the topic itself was very interesting and significant. Maybe due to the nature of this short article, it might be hard for the authors to bring out more background information to make this paper easier to understand.
+
+[Evaluate figures and graphs]
+This paper included many figures and graphs to visualize the results the authors draw out. For me, figures and graphs well reflect what the authors trying to convey and "somewhat" easier to understand. However, since these figures & graphs also invovled some statistical methods, it is not easy to understand most of figures without having any statistical backgrounds. 
