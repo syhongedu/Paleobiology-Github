@@ -1,0 +1,24 @@
+7th Writing Assignment
+Sungyoon Hong
+
+## The influence of lithification on Cenozoic marine biodiversity trends by Austin J. W. Hendy (2009).
+
+## Article Summary
+In <strike>past</strike> previous biodiversity <strike>record</strike> analyses, diversity generally <strike>showed the increasing trend</strike> increases through <strike>toward the younger geological</strike> time. This pattern brought diverse interpretation of paleontologists. They tried to evaluate whether this trend is showing the actual pattern or it is simply biased record. In this paper, Hendy tries to explain this trend using lithification degree. 
+
+Generally, unlithified sediments tend to contain more fossils than well-lithified sediments. Therefore, Hendy gathered fossils from various bulks of rocks with different lithification degree (from unlithified to cemented) but having same lithologies to represent same place over time. Fossils are gathered from two sedimentary basins of New Zealand and mostly consisted of Mollusks and Brachiopods from late Miocene to Pleistocene epoch. Besides fossil samples, the author collected additional data from New Zealand Fossil Record File Database and richness per different lithification degree was measured to find out how much richness difference is shown between various lithification degrees. Besides these beds, *Tawera* dominated bed are also included in the analysis since their abundant sample size and wide variety of lithification degrees. 
+
+> Hmm, is that why the *Tawera* beds were important? Did he use them to learn anything special?
+
+To calculate richness, Hendy used rarefraction analysis and nonparametric Kolmogorov-Smirnov test and parametric-t tests are performed except early Pliocene for statistical confidence. Moreover, mineralogy and size grouping was performed to find out whether these factors also effect on preservation. In result, Hendy discovered that unlithified sediments do have higher diversity than well-lithified sediments. And, since unlithified rocks are increasing towards the younger geological time period, increasing trend of biodiversity would be reflected by the degree of lithification of sediments. Additionally, mineralogy (whether the shell has calcitic or aragonitic shells) or size of the shell became the bias in the lithified sediments. Since, lithified rocks tend to show decline in aragonitic preservation and small number of small taxons, this would further decrease the richness of lithified sediments.
+
+## What I Liked About Paper
+One thing I liked about this paper is that it gives very fresh view of looking at biodiversity over geologic time. Preservation bias was long discussed topic in this field and I thought that the limited amount of exposed rocks is the reason why we have this generally increasing trend of biodiversity because younger-aged rocks are generally more abundant than older-aged rocks. However, I didn't expect the lithification degree becomes another factor for determining diversity. This gives another reason why this increasing pattern is observable.
+
+## What I Disliked About Paper
+Honestly, I didn't find any disliking points in this paper. This paper is, in my opinion, very refreshing and clear that I didn't find any major problems. However, one minor point gets me is that the temporal range is somewhat restricted into the Cenozoic. Maybe it is because the fossil record is very abundant in Cenozoic. However, to reconstruct somewhat firm biodiversity, I guess little research or mentioning about whether Mesozoic or Paleozoic rocks show same pattern or not would help me to see that these lithification intensity grades are actually one of the main factor of well-known biodiversity graph is actually true or not. It is hard to make research for entire time period but, I guess, little bit of background would not hurt. Also, fossil records are also biased in Mollusks and Brachiopods. In the geologic time, even though Mollusks left the most fossil record behind in the rock due to their durable fossil records, there are numerous other animals with hard parts existed together. Therefore, trying to evaluate solely with Mollusks (and minor number of Brachiopods), in my opinion, would lead to biased view to see this biodiversity graph. Yes, this is very refreshing method and might be true for Mollusks and Brachiopods. However, additional research of other animal groups should be conducted to figure out to confirm that lithification degree is actually important factor in preservation and thus reflect in biodiversity graph. 
+
+> Good points, maybe it is something you could look at for your research proposal.
+
+## Figures and Graphs
+In this paper, figures and graphs are mostly focusing on showing result of the research. They are clearly presented and concise enough to understand in one sight. One thing I found good about these figures is that they well-represent the gist of this paper that it helps you understand what texts says. 
