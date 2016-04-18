@@ -39,19 +39,39 @@
    [1] 2133.429
    sd(TriUnitFreqs)
    [1] 1321.764
+   (838-2133.429)/1321.764
+   [1] -0.9800759
+   Triassic Unit is  -0.9800759 sd below the mean
 
-
-6.
-7.
+6. No I don't think Triassic Units are statistically lower in numbers of units than other periods. It's value is still below the mean, 0.9800759 doesn't seem to show significant difference than other units.
+7. TriJurUnitFreqs <- c(nrow(CretaceousUnitsRestricted),nrow(PermianUnitsRestricted),nrow(CarboniferousUnitsRestricted),nrow(DevonianRestricted),nrow(SilurianUnitsRestricted),nrow(OrdovianUnitsRestricted))
+   mean(TriJurUnitFreqs)
+   [1] 2322.667
+   sd(TriJurUnitFreqs)
+   [1] 1340.022
+  
+   (838-2322.667)/1340.022
+   [1] -1.107942
+   Even though Triassic and Jurassic are considered as potential outliers, still it is not    statistically significant (Even though value is little bit increase though)   
 
 [Problem Set 3]
-1.
-2.
-3.
-4.
-5.
-6.
+1.  URL2<-"https://macrostrat.org/api/columns?format=geojson_bare&project_id=1"   
+    GotURL2<-getURL(URL2)
+    NAMAP<-readOGR(GotURL2,"OGRGeoJSON",verbose=FALSE)
+    plot(NAMAP,col=NA)
+2.  URL3 <- "https://macrostrat.org/api/columns?format=geojson_bare&interval_name=Olenekian&project_id=1"
+   GotURL3<-getURL(URL3)
+   OleMap <- readOGR(GotURL4,"OGRGeoJSON",verbose=FALSE)
+   plot(OleMap,col="#B051A5",add=TRUE)
+3. DataPBDB <- downloadPBDB(Taxa=c("Animalia"),StartInterval="Induan",StopInterval="Anisian")
+   points(DataPBDB[c("lng","lat")])
+4. URL4 <- "https://macrostrat.org/api/columns?format=geojson_bare&interval_name=Lopingian&project_id=1"
+   GotURL4 <- getURL(URL4)
+   LopMap <- readOGR(GotURL4,"OGRGeoJSON",verbose=FALSE)
+   plot(LopMap,col="#FBA794",add=TRUE)
+5. DataPBDB <- downloadPBDB(Taxa=c("Animalia"),StartInterval="Lopingian",StopInterval="Lopingian")
+   points(DataPBDB[c("lng","lat")])
+6. No. According the result I got, Early Triassic record does not show substantial drop in sedimentary rock unit numbers. Thus, with the result I got, the hypothesis is rejected. The lower diversity during Early Triassic does not mean an artefact of poor sampling or available sedimentary rock accoring to the data I get. However, the time span I used for Early Triassic is way longer than Lopingian that this data can be somewhat misdirected. 
 
 
 
-252.17 - 201.30
