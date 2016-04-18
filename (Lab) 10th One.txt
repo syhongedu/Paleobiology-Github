@@ -1,0 +1,57 @@
+[Problem Set 1]
+1. TriassicUnits <- read.csv("https://macrostrat.org/api/units?interval_name=Triassic&format=csv")
+2. nrow(TriassicUnits)
+   [1] 838
+3. TriassicUnits[1:10,]
+   These rocks are mostly igneous rocks and these rocks do not preserve fossils at all (since fossils    are going to be melt from the high heat of magma)
+4. Column b_age is the starting age and t_age is the ending age of each unit
+5. Every rocks are not only constrained by the Triassic. Some units are started from Triassic but it goes through other periods. Also, other units do not start from Triassic but have Triassic within their range.
+
+[Problem Set 2]
+1. TriassicUnits <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Triassic&format=csv")
+2. TriassicUnitsRestricted <- TriassicUnits[which(TriassicUnits[,"b_age"]<=252.17&TriassicUnits[,"t_age"]>=201.3),]
+3. + Cretaceous <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Cretaceous&format=csv")
+ -> CretaceousUnitsRestricted <- Cretaceous[which(Cretaceous[,"b_age"]<=145&Cretaceous[,"t_age"]>=66),]
+
+   + Jurassic <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Jurassic&format=csv")
+ -> JurassicUnitsRestricted <- Jurassic[which(Jurassic[,"b_age"]<=201.3&Jurassic[,"t_age"]>=145),]
+
+   + Permian <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Permian&format=csv")
+ ->  PermianUnitsRestricted <- Permian[which(Permian[,"b_age"]<=298.9&Permian[,"t_age"]>=252.17),]
+
+   + Carboniferous <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Carboniferous&format=csv")
+ ->  CarboniferousUnitsRestricted <- Carboniferous[which(Carboniferous[,"b_age"]<=358.9&Carboniferous[,"t_age"]>=298.9),]
+
+   + Devonian <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Devonian&format=csv")
+ ->  DevonianRestricted <- Devonian[which(Devonian[,"b_age"]<=419.2&Devonian[,"t_age"]>=358.9),]
+
+   + Silurian <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Silurian&format=csv")
+ ->  SilurianUnitsRestricted <- Silurian[which(Silurian[,"b_age"]<=443.8&Silurian[,"t_age"]>=419.2),]
+
+   + Ordovician <- read.csv("https://macrostrat.org/api/units?lith_class=sedimentary&interval_unit=Ordovician&format=csv")
+ ->  OrdovianUnitsRestricted <- Ordovician[which(Ordovician[,"b_age"]<=485.4&Ordovican[,"t_age"]>=443.8),]
+
+4. UnitFreqs <- c(nrow(CretaceousUnitsRestricted),nrow(JurassicUnitsRestricted),nrow(TriassicUnitsRestricted),nrow(PermianUnitsRestricted),nrow(CarboniferousUnitsRestricted),nrow(DevonianRestricted),nrow(SilurianUnitsRestricted),nrow(OrdovianUnitsRestricted))
+[1] 4588  998  604  903 3020 2059 1205 2161
+
+5. TriUnitFreqs <- c(nrow(CretaceousUnitsRestricted),nrow(JurassicUnitsRestricted),nrow(PermianUnitsRestricted),nrow(CarboniferousUnitsRestricted),nrow(DevonianRestricted),nrow(SilurianUnitsRestricted),nrow(OrdovianUnitsRestricted))
+   mean(TriUnitFreqs)
+   [1] 2133.429
+   sd(TriUnitFreqs)
+   [1] 1321.764
+
+
+6.
+7.
+
+[Problem Set 3]
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+
+252.17 - 201.30
