@@ -1,0 +1,17 @@
+Sungyoon Hong
+14th Writing Assignment
+
+Has the Earth's sixth mass extinction already arrived? by the Barnosky et al. (2011)
+
+[Article Summary]
+In this article, Barnosky et al. are trying to evaluate the plausibility of sixth mass extinction which is still ongoing. Firstly, the authors try to figure out whether this "sixth mass extinction" is truly belong to the category of the mass extinction. According to them, mass extinction is defined as 75% of species disappear within relatively short geologic term (around 2 million years). To figure out whether this "sixth mass extinction" is a real mass extinction, the authors state two important factors: background extinction rate and magnitude. For background extinction rate, Barnosky et al., use E/MSY (extinction per million species-year, as their major method. For magnitude, the authors compare magnitude record in fossil record and modern record. Even though these methods are good way to find out the intensity of extinction, Baronsky et al., say that still this method has some flaw. Major flaw is that the fossil records and modern data are not enough to draw complete picture. Therefore, the authors present their data as accurate as possible from the datas they have available for now. When Baronsky et al., combine both rate and magnitude, they conclude that the "sixth mass extinction" is a true event. They also mention that if "Threatened" species are extinct within a century, the rate would be very close to the mass extinction level. The authors suspect the cause of this extinction is vary such as global warming, habit fragmentation and overhunting. In the end, the authors conclude that, still, the intensity of mass extinction is not matching with the previous big-five mass extinctions but constant ecological stressor would bring closer to the big-five in future.
+
+
+[What I Like About This Article]
+I think this article is pretty decent paper abour reviewing ongoing "sixth mass extinction." Also, it is very well organized and have convincable logics. The way the authors admit that there's many issues to solve out makes this paper significant since it gives further suggestions to bring this field of study closer to the truth.  
+
+[What I Dislike About This Article]
+One thing I disliked about this paper is that the paper is mostly focus on terrestrial vertebrate, especially mammals. When you consider the extinction rate throughout geologic history, mostly marine invertebrate fossils take most of the part. I think that it would be better if there's more information about marine invertebrates in this paper would give more convincing arguement. 
+
+[Evaluating Graph and Figures]
+Tables and figures are fine. However, for figure, it is hard for me to understand when I look at it without reading information. Tables are very helpful and provides important background information. 
