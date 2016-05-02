@@ -73,5 +73,20 @@ TriassicSynapsids <- unique(TriassicSynapsids[,"genus"])
  According to the data, for every one degree increase in the latitude of the genus, its odds of having survived T/J increases by 0.000774. This value is somewhat low, in my opinion. Therefore, I don't think mean latitude of a Triassic genus is a good predictor of it survival.
  
 [Extra Credit]
+Idontknow <- array(0,dim=length(TJBVictims),dimnames=list(TJBVictims))
+Iamsorry <- array(0,dim=length(TriassicDiapsids),dimnames=list(TriassicDiapsids))
+IsitFinalMatrix <- merge(MeanLatitudes,Idontknow,all=TRUE,by="row.names")
+IsitFinalMatrix<-transform(IsitFinalMatrix,row.names=Row.names,Row.names=NULL)
+
+Maybe <- merge(IsitFinalMatrix,Iamsorry,all=TRUE,by="row.names")
+Maybe <- transform(Maybe,row.names=Row.names,Row.names=NULL)
+colnames(Maybe) <- c("MeanLatitudes","Survivor/Victim","Diapsid/Synapsid")
+
+Maybe[is.na(Maybe[,"Survivor/Victim"]),]<-1
+
+
+
+
+
 
 
