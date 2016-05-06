@@ -1,6 +1,15 @@
-[Problem Set 1]
-1. max_ma means return only records whose temporal locality is at most this old and min_ma means return only records whose temporal locality is at least this old.
-2. sort(tapply(DataPBDB[,"max_ma"],DataPBDB[,"genus"],max))
+## Problem Set 1
+
+> 16/20
+
+1) max_ma means return only records whose temporal locality is at most this old and min_ma means return only records whose temporal locality is at least this old.
+
+2) 
+
+> You didn't need to print all the data!
+
+````R
+sort(tapply(DataPBDB[,"max_ma"],DataPBDB[,"genus"],max))
         Curvemysella             Galeomma              Oxyloma 
               0.0117               0.0117               0.0117 
          Perumytilus            Altenaeum            Asperarca 
@@ -681,7 +690,12 @@
              66.0000              66.0000              66.0000 
            Yoldiella 
              66.0000 
-3. sort(tapply(DataPBDB[,"min_ma"],DataPBDB[,"genus"],max))
+````     
+             
+3) 
+
+````R
+sort(tapply(DataPBDB[,"min_ma"],DataPBDB[,"genus"],max))
                Bernardina         Curvemysella            Foveadens 
               0.0000               0.0000               0.0000 
             Galeomma              Mytella              Oxyloma 
@@ -1362,52 +1376,81 @@
              61.7000              61.7000              61.7000 
           Pycnodonte 
              63.3000 
-4. sort(table(DataPBDB[,"genus"]))
-   Anadara with 1916 occurrences
-5. Used same code as number 2 and 3 for stratigraphic range
-   Stratigraphic range of Anadara is 66 - 56 million years old.
+````             
 
-[Problem Set 2]
-1. Lucina[,"paleolng"] tries to find all the paleolongitude in our Lucina sample
+4) `sort(table(DataPBDB[,"genus"]))`
+   Anadara with 1916 occurrences
+
+5) Used same code as number 2 and 3 for stratigraphic range
+   Stratigraphic range of Anadara is 66 - 56 million years old.
+   
+   > I'm not sure how you got that result. The range is from 66-0. -1 Points
+
+## Problem Set 2
+1) Lucina[,"paleolng"] tries to find all the paleolongitude in our Lucina sample
    length(Lucina[,"paleolng"] symbolizes the length of vectors in Lucina[,"paleolng"] function
    sample(Lucina[,"paleolng"],length(Lucina[,"paleolng"]),replace=TRUE)) randomly resample the occurrences    of Lucina
    and mean function finds the mean of paleolongitude of these randomly resampled Lucina occurrences.
-2. plot(density(ResampledMeans))
+
+2) `plot(density(ResampledMeans))`
    Yes, the distribution looks approximately Gaussian since the graph shows typically "bell-curve" shape    (highest in the median value and lowest in both max and min values) which is characteristic feature of    Gaussian distribution.
-3. mean(ResampledMeans)
+
+3) `mean(ResampledMeans)`
    24.16227
    This value is almost similar to the original mean value which is 24.1997
-4. Use sort(ResampledMeans) to sort ResampledMeans (couldn't paste every value from the R, because they are too much. However, values are sorted in order by this function)
-5. quantile(ResampledMeans,c(0.025,0.975))
+
+4) Use sort(ResampledMeans) to sort ResampledMeans (couldn't paste every value from the R, because they are too much. However, values are sorted in order by this function)
+
+5) `quantile(ResampledMeans,c(0.025,0.975))`
     2.5%    97.5% 
    21.82094 26.28630
-6. 95% of confidence interval means that probability of the true values of parameter lies within specific range of genera is 95%. In question 5, subtract 97.5th to 2.5th percentile equals 95 percentile which leads to the 95% confidence interval. Therefore, in 95% of probability, values are lie within 21.92094 and 26.28630 which makes two of these above values into lower and upper confidence interval of the mean.
+
+6) 95% of confidence interval means that probability of the true values of parameter lies within specific range of genera is 95%. In question 5, subtract 97.5th to 2.5th percentile equals 95 percentile which leads to the 95% confidence interval. Therefore, in 95% of probability, values are lie within 21.92094 and 26.28630 which makes two of these above values into lower and upper confidence interval of the mean.
  
-[Problem Set 3]
+## Problem Set 3
 1. Lucina is likely to still alive. Since it's earliest interval is 0.00 whih represents modern.
-2. Dallarca <- subset(DataPBDB,DataPBDB[,"genus"]=="Dallarca")
+
+2. 
+````R
+   Dallarca <- subset(DataPBDB,DataPBDB[,"genus"]=="Dallarca")
    estimateExtinction(Dallarca[,"min_ma"],0.95)
    Earliest   Latest 
-   2.58800 -3.88749 
-3. No. According to the confidence interval, the earliest extant of Dallarca is 2.588. This data represents that Dallarca went extinct during the end of the Pliocene Epoch
-4. Both. The earliest record in the confidence interval (2.588) is almost closer to the latest age of the Pliocene epoch (2.58). Therefore, the confidence interval and pure fossil record show almost similar answer that both can be trusted well in case of Dallarca. However, if I have to choose one, I would choose pure reading of fossil record since it has longer time span than confidence interval (It would be clearer for me if I know the exact date of the last Dallarca occurrence)
+   2.58800 -3.88749
+````
 
-[Problem Set 4]
-1. Since it is randomly distributed, the record of randomly distributed taxon would not match with the lithology (which represents paleoenvironment and ecology of the organism) and show somewhat different pattern than actual fossil records
-2. Since likelihood of preservation does not change, this assumption would not show any geological biases (such as preservational biases) and might lead to the different pattern compare to the actual fossil records.
+3) No. According to the confidence interval, the earliest extant of Dallarca is 2.588. This data represents that Dallarca went extinct during the end of the Pliocene Epoch
 
-[Problem Set 5]
-1. nrow(DataPBDB)
+4) Both. The earliest record in the confidence interval (2.588) is almost closer to the latest age of the Pliocene epoch (2.58). Therefore, the confidence interval and pure fossil record show almost similar answer that both can be trusted well in case of Dallarca. However, if I have to choose one, I would choose pure reading of fossil record since it has longer time span than confidence interval (It would be clearer for me if I know the exact date of the last Dallarca occurrence)
+
+## Problem Set 4
+1). Since it is randomly distributed, the record of randomly distributed taxon would not match with the lithology (which represents paleoenvironment and ecology of the organism) and show somewhat different pattern than actual fossil records
+
+2) Since likelihood of preservation does not change, this assumption would not show any geological biases (such as preservational biases) and might lead to the different pattern compare to the actual fossil records.
+
+## Problem Set 5
+1)
+````R
+nrow(DataPBDB)
    [1] 67618
    nrow(ExtantData)
    [1] 59097
+````   
    8521 occurrences were lost by limiting to only extant bivalves.
-2. nrow(unique(DataPBDB))
+2)
+````R
+nrow(unique(DataPBDB))
    [1] 67618
    nrow(unique(ExtantData))
    [1] 59097
-   According to these data, 12.6% of Cenozoic bivalves in the PBDB are still extant today.
-3. sort(tapply(ExtantData[,"max_ma"],ExtantData[,"genus"],max))
+````
+
+According to these data, 12.6% of Cenozoic bivalves in the PBDB are still extant today.
+
+> You made a mistake somewhere, the correct different should be about 52 percent. -1 Points
+
+3) 
+````R
+sort(tapply(ExtantData[,"max_ma"],ExtantData[,"genus"],max))
    Curvemysella       Galeomma    Perumytilus      Altenaeum      Asperarca 
         0.0117         0.0117         0.0117         0.1260         0.1260 
      Atactodea       Capsella          Comus      Ensiculus        Erodona 
@@ -1838,7 +1881,11 @@ Elliptotellina        Haliris     Mesopeplum         Adrana   Cerastoderma
        61.7000        61.7000        61.7000        61.7000        61.7000 
   Venericardia     Pycnodonte 
        61.7000        63.3000 
-4. tapply(ExtantData[,"min_ma"],ExtantData[,"genus"],max) -> Same code to get minimum age of stratigraphic range of genera, Every genera except  Curvemysella, Galeomma, Mytella, and Perumytilus are not extant according to the PBDB.
+       
+````
+
+4) `tapply(ExtantData[,"min_ma"],ExtantData[,"genus"],max)` -> Same code to get minimum age of stratigraphic range of genera, Every genera except  Curvemysella, Galeomma, Mytella, and Perumytilus are not extant according to the PBDB.
+
 5. Scrobiculara <- subset(ExtantData,ExtantData[,"genus"]=="Scrobicularia")
    estimateExtinction(Scrobiculara[,"min_ma"],0.95)
    Earliest    Latest 
@@ -1890,6 +1937,8 @@ Elliptotellina        Haliris     Mesopeplum         Adrana   Cerastoderma
    0.011700 -3.481128
 
    0% of these taxa have confidence intervals indicating that the taxon might be still extant. Even though most of genera lived until modern time (0.0117 mya) but they don't have fossil records until (0.0 mya) which means none of them still extant until now according to the PBDB.
+   
+   > That is a completely wrong interpretation. The negative confidence interval means that the confidence interval is projecting an extinction date into the future. -2 Points
 
 
  
