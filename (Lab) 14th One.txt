@@ -1,0 +1,3 @@
+[Problem Set 1]
+ taxa_short <- subset(taxa,taxa[,"taxon_rank"]!="family")
+> count_uses(taxa_short[,"taxon_name"],3,pyr)
