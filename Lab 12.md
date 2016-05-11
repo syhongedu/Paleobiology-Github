@@ -1,4 +1,7 @@
 [Problem Set 1]
+
+> 20/20
+
 1. TriassicSynapsids<-downloadPBDB("Synapsida","Anisian","Rhaetian")
    TriassicDiapsids<-downloadPBDB("Diapsida","Anisian","Rhaetian")
    JurassicDiapsids<-downloadPBDB("Diapsida","Jurassic","Neogene")
